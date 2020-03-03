@@ -13,8 +13,49 @@
             background-color: cornflowerblue;
             font-size: 100px;
             font-family: Arial, Helvetica, sans-serif;
-            font
             }
+        .main-contents{
+            border: 3px solid white;
+            box-sizing: border-box;
+            margin-top: 50px;
+            height: 300px;
+            background-color:cornflowerblue ;
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-contents-groups{
+            position: relative;
+            left: 25px;
+        }
+        .main-contents-username{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .main-contents-button{
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .main-talk{
+            margin-top: 30px;
+            box-sizing: border-box;
+            border: none;
+        }
+        .talk-check-button{
+            margin:20px;
+            text-align: center;
+            padding: 15px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .main-talk-check{
+            background-color: cornflowerblue;
+        }
+        
+        
     </style>
     <body>
         <div class = "main">
@@ -22,21 +63,26 @@
                 Twittler
             </div>
             <div class = "main-contents">
+              <div class = "main-contents-groups">
                 <div class = "main-contents-username">
                     userName
-                    <input type="text" width="100px">
+                    <div class = "main-contents-text">
+                        <input type="text" style="width:200px; height: 10px;">
+                    </div>
                 </div>
                 <div class = "main-contents-comment">
                     Comment
-                   <textarea id="comment-text" width="300px" height="300px">blank</textarea>
+                    <div class = "main-contents-comment-text">
+                        <input type="text" style="width:600px; height: 100px;">
+                    </div>
                 </div>
                 <button class = "main-contents-button">Tweet!</button>
+              </div>
             </div>
             <div class = "main-talk">
                 <div class = "main-talk-check">
                     <button class ="talk-check-button">check new tweet</button>
                 </div>
-            <ul>
                 // 컨텐츠 시작 
                 <div class ="main-talk-contents">
                     <div class = "main-talk-contents-time">
@@ -85,7 +131,6 @@
                     </div>
                 </div>
             </div>
-        </ul>
 
             // 컨텐츠 끝 
         </div>
